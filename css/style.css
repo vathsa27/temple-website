@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Edu QLD Hand", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.active{
+    color: #daadad;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+body , html{
+    overflow-x: hidden;
+}
+
+
+/* Navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: whitesmoke;
+    /* border: 2px solid #fff; */
+    font-size: 25px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid #fff; */
+    width: 500px;
+    font-size: 25px;
+}
+
+.mobile-menu{
+    margin-top: 0px;
+}
+
+.nav-links li{
+    margin: 30px auto;
+}
+ 
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/bg2.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-color: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 5vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #a53696;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: #daadad73;
+    border-radius: 30px;
+    color: rgb(32, 3, 3);
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Events */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #1107499c;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* background: cadetblue; */
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .row{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: #881278;
+    margin: 20px auto;
+}
+
+p{
+    color: #000000;
+    padding: 0px 40px;
+    font-size: 20px;
+}
+
+.events .ctn{
+    margin-top: 30px;
+}
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1{
+    font-size: 7vmin;
+    /* margin: 50px; */
+}
+
+.explore-content .line{
+    margin-bottom: 50px;
+}
+
+.explore-content p{
+    color: whitesmoke;
+}
+
+.explore-content .ctn{
+    margin-top: 49px;
+}
+
+/* Trips */
+.content-col{
+    width: 40%;
+}
+
+.image-col{
+    width: 50%;
+}
+
+.trips .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.image-gallery img{
+    width: 250px;
+    margin: 10px;
+}
+
+.content-col h1{
+    font-size: 7vmin;
+    color: #1107499c;
+}
+
+.content-col .line{
+    margin-left: 1px;
+}
+
+.content-col .ctn{
+    margin-left: -100px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #1107499c;
+    text-align: center;
+}
+
+.footer p{
+    color: whitesmoke;
+    margin: 15px auto;
+}
+
+
+/* Moblie Device */ 
+@media only screen and (max-width : 850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;    
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        background-color: #36022f9c;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+        font-size: 30px;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+}

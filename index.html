@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">Temple</h1>
+        <ul class="nav-links">
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Contact</li>
+        </ul>
+        <img src="./images/menu.png" alt="" class="menu-btn">
+    </nav>
+    <header
+        style="background: linear-gradient(rgba(29, 19, 85, 0.6), rgba(82, 26, 94, 0.445)), url('./images/bg2.jpg'); background-size: cover; background-position: center;">
+        <div class="header-content">
+            <h2>Explore The Historical Temples</h2>
+            <div class="line"></div>
+            <h1>Temple Vibe</h1>
+            <a href="#" class="ctn">Learn More</a>
+
+        </div>
+    </header>
+
+    <!-- ==Events== -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="image-temples">
+                <div class="col">
+                <img src="./images/image1.jpg" alt="">
+                <h4>Sri Padmanama Swami Temple</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id amet quis sapiente? Assumenda.
+                </p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="./images/image4.jpg" alt="">
+                <h4>Sri Venkataswami Temple</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id amet quis sapiente? Assumenda.
+                </p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore"
+        style="background: linear-gradient(rgba(36, 19, 131, 0.6), rgba(105, 36, 121, 0.445)), url('./images/bg1.jpg'); background-size: cover; background-position: center;">
+        <div class="explore-content">
+            <h1>Explore Temples</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laudantium aperiam rerum consectetur
+                quaerat
+                hic ullam delectus esse fugiat libero. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis
+                voluptates ipsam possimus dolor amet, numquam neque ea nulla aut in? Illum aut nostrum ducimus debitis
+                amet velit, adipisci nam id.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="trips">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Upcoming Trips & Destination</h1>
+                <div class="line"></div>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A delectus accusamus debitis exercitationem modi facere corrupti optio, iure temporibus cupiditate veniam quibusdam natus aliquid rerum facilis incidunt voluptatibus doloribus ratione?</P>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./images/image2.jpg" alt="">
+                    <img src="./images/image3.jpg" alt="">
+                    <img src="./images/image5.jpg" alt="">
+                    <img src="./images/image6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>LIG-220, Gandhi Park, Babametta, VZM |Phone No - 7386396848 | Email - srivathsala27@email.com</p>
+        <p>Copyright © 2025 SriVathsala</p>
+        <p></p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>
