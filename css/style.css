@@ -26,7 +26,7 @@ ul{
 }
 
 body , html{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -121,6 +121,11 @@ section{
     margin: 80px auto;
 }
 
+.events{
+    width: 90%;
+    /* border: 2px solid red; */
+}
+
 .title{
     text-align: center;
     font-size: 4vmin;
@@ -129,37 +134,45 @@ section{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    /* background: cadetblue; */
-}
-
-.row .col{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.events .row .col img{
-    width: 500px;
-    height: 350px;
+    /* border: 2px solid blue; */
 }
 
 .events .row{
     margin-top: 50px;
 }
 
+.row .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 300px;  /* each col takes min 300px, then wraps */
+    margin: 10px;
+    /* border: 2px solid green; */
+}
+
+.events .row .col img{
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
 h4{
     font-size: 3vmin;
     color: #881278;
-    margin: 20px auto;
+    margin: 20px 10px;
 }
 
 p{
     color: #000000;
-    padding: 0px 40px;
-    font-size: 20px;
+    /* padding: 0px 40px; */
+    font-size: 18px;
+    width: 100%;  /* allow text to adapt */
+    text-align: center;
 }
 
 .events .ctn{
@@ -230,7 +243,6 @@ p{
 .image-wrapper:hover img {
     filter: grayscale(0%);         /* show original color */
 }
-
 
 /* Gradient overlay */
 /* .image-wrapper::after {
@@ -317,7 +329,7 @@ p{
 }
 
 
-/* Moblie Device */ 
+/* Responsivenes */ 
 @media only screen and (max-width : 850px){
     .menu-btn{
         display: block;
@@ -331,19 +343,35 @@ p{
         left: 30px;    
     }
     .nav-links {
+        position: fixed;
+        top: 110px;
         flex-direction: column;
         width: 100%;
         height: 80vh;
         justify-content: center;
-        background-color: #36022f9c;
+        background-color: #0b00099c;
+        color: #fff;
         margin-top: -900px;
         transition: all 0.5s ease;
         font-size: 30px;
+        font-weight: bolder;
     }
     .mobile-menu{
         margin-top: 0px;
     }
     .nav-links li{
-        margin: 30px auto;
+        margin: 10px auto;
+        padding: 15px;
     }
+    .nav-links li:hover{
+        background-color: #881278;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    header{
+        height: 96vh;
+    }
+
+
 }
