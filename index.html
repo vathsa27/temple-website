@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Travel</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+
+    <!-- Custom CSS Link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -27,6 +29,7 @@
         <img src="./images/menu.png" alt="" class="menu-btn">
     </nav>
 
+    <!-- Header -->
     <header
         style="background: linear-gradient(rgba(29, 19, 85, 0.6), rgba(82, 26, 94, 0.445)), url('./images/bg2.jpg'); background-size: cover; background-position: center;">
         <div class="header-content">
@@ -34,11 +37,10 @@
             <div class="line"></div>
             <h1>Temple Vibe</h1>
             <a href="#" class="ctn">Learn More</a>
-
         </div>
     </header>
 
-    <!-- ==Events== -->
+    <!-- Events -->
     <section class="events">
         <div class="title">
             <h1>Upcoming Events</h1>
@@ -63,6 +65,7 @@
         </div>
     </section>
 
+    <!-- Explore -->
     <section class="explore"
         style="background: linear-gradient(rgba(36, 19, 131, 0.6), rgba(105, 36, 121, 0.445)), url('./images/bg1.jpg'); background-size: cover; background-position: center;">
         <div class="explore-content">
@@ -91,9 +94,9 @@
                 <img src="./images/image6.jpg" alt="">
             </div>
         </div>
-
     </section>
 
+    <!-- Trips -->
     <section class="trips">
         <div class="row">
             <div class="col content-col">
@@ -120,12 +123,18 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <section class="footer">
-        <p class="address"> <span>LIG-220, Gandhi Park, Babametta, VZM </span> <span> Phone No - 7386396848 </span> <span> Email - srivathsala27@email.com</span></p> 
+        <div class="address"> 
+            <p>LIG-220, Gandhi Park, Babametta, VZM </p> 
+            <p> Phone No - 7386396848 </p> 
+            <p> Email - srivathsala27@email.com</p>
+        </div> 
         <p class="copyright">Copyright © 2025 SriVathsala</p>
     </section>
 
     <script>
+        // Navbar code
         const menuBtn = document.querySelector('.menu-btn')
         const navlinks = document.querySelector('.nav-links')
 
